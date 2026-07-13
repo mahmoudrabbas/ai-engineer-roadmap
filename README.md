@@ -1,10 +1,29 @@
 # 🤖 AI Engineer Roadmap
 
-> Based on [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer) (2026 version)
+> My hands-on journey through the [AI Engineer roadmap](https://roadmap.sh/ai-engineer) (roadmap.sh, 2026 version) — notes and real mini-projects for every stage.
 >
 > An AI Engineer uses pre-trained models and existing AI tools to improve user experiences. They focus on applying AI in practical ways, without building models from scratch — different from AI Researchers and ML Engineers, who focus more on creating new models or developing AI theory.
 
-Track your progress by checking off each topic as you learn it. ✅
+Track progress by checking off each topic as it's learned. Each major section below corresponds to a folder containing notes and/or a small project that demonstrates the concept. ✅
+
+## 📂 Repo Structure
+
+```
+ai-engineer-roadmap/
+├── README.md                      # this file — roadmap + progress tracker
+├── 01-introduction/                # notes only
+├── 02-working-with-llms/           # notes + token/sampling experiments
+├── 03-prompt-context-engineering/  # notes + prompt technique examples
+├── 04-ai-models/                   # notes + model comparison scripts
+├── 05-embeddings-vector-db/        # notes + embedding/vector search demo
+├── 06-rag/                         # RAG project (chunking → retrieval → generation)
+├── 07-ai-agents-mcp/               # agent + MCP server/client projects
+├── 08-ai-safety-ethics/            # notes + safety checklist
+├── 09-evaluation-observability/    # eval scripts + observability setup
+└── 10-multimodal-ai/               # multimodal mini-project (vision/audio)
+```
+
+Each folder has its own short `README.md` with notes, and a `project/` subfolder where a working mini-project applies that topic.
 
 ---
 
@@ -16,6 +35,7 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] AI Engineer vs ML Engineer
 
 ### Pre-requisites (pick one)
+
 - [ ] Frontend
 - [ ] Backend
 - [ ] Full-Stack
@@ -25,9 +45,11 @@ Track your progress by checking off each topic as you learn it. ✅
 ## 📌 2. Working With LLMs
 
 ### How LLMs Work
+
 - [ ] How LLMs Work (overview)
 
 ### Common Terminology
+
 - [ ] AI vs AGI
 - [ ] Large Language Model (LLM)
 - [ ] Embeddings
@@ -41,6 +63,7 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Context Engineering
 
 ### Core LLM Elements
+
 - [ ] Tokens
 - [ ] Context
 - [ ] Sampling Parameters
@@ -56,6 +79,7 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Prompt vs Context Engineering (overview)
 
 ### Prompt Engineering
+
 - [ ] Zero-Shot
 - [ ] Few-Shot
 - [ ] ReAct
@@ -71,6 +95,7 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Structured Output
 
 ### Context Engineering
+
 - [ ] External Memory
 - [ ] RAG and Dynamic Filters
 - [ ] Context Compaction
@@ -81,6 +106,7 @@ Track your progress by checking off each topic as you learn it. ✅
 ## 📌 4. AI Models
 
 ### Type of Models
+
 - [ ] Pre-trained Models
 - [ ] Closed vs Open Source Models
 - [ ] Self-Hosted Models
@@ -88,6 +114,7 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Choosing the Right Model
 
 ### Closed Models
+
 - [ ] Anthropic Claude
 - [ ] Google Gemini
 - [ ] OpenAI (GPT, o-series)
@@ -95,21 +122,24 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Mistral
 
 ### Open Source Models
+
 - [ ] Meta Llama
 - [ ] DeepSeek
 - [ ] Qwen
 - [ ] Gemma2
 
 ### Platforms & Ecosystem
+
 - [ ] Hugging Face
-  - [ ] Hugging Face Tasks
-  - [ ] Hugging Face Hub
-  - [ ] Transformers.js
+    - [ ] Hugging Face Tasks
+    - [ ] Hugging Face Hub
+    - [ ] Transformers.js
 - [ ] Ollama
 - [ ] LM Studio
 - [ ] OpenRouter
 
 ### APIs & SDKs
+
 - [ ] OpenAI Response API
 - [ ] Claude Messages API
 - [ ] Google Gemini API
@@ -121,36 +151,39 @@ Track your progress by checking off each topic as you learn it. ✅
 ## 📌 5. Embeddings & Vector Databases
 
 ### What are Embeddings
+
 - [ ] What are Embeddings (overview)
 - [ ] Use Cases for Embeddings
-  - [ ] Data Classification
-  - [ ] Recommendation Systems
-  - [ ] Anomaly Detection
+    - [ ] Data Classification
+    - [ ] Recommendation Systems
+    - [ ] Anomaly Detection
 
 ### Embedding Models
+
 - [ ] Proprietary Models
-  - [ ] OpenAI Embeddings API
-  - [ ] Gemini Embedding
-  - [ ] Cohere
+    - [ ] OpenAI Embeddings API
+    - [ ] Gemini Embedding
+    - [ ] Cohere
 - [ ] Open Source Models
-  - [ ] Sentence Transformers
-  - [ ] Models on Hugging Face
-  - [ ] Jina
+    - [ ] Sentence Transformers
+    - [ ] Models on Hugging Face
+    - [ ] Jina
 
 ### Vector Databases
+
 - [ ] Purpose and Functionality
 - [ ] Popular Vector DBs (pick one)
-  - [ ] Chroma
-  - [ ] Pinecone
-  - [ ] Weaviate
-  - [ ] FAISS
-  - [ ] LanceDB
-  - [ ] Qdrant
-  - [ ] Supabase
-  - [ ] MongoDB Atlas
+    - [ ] Chroma
+    - [ ] Pinecone
+    - [ ] Weaviate
+    - [ ] FAISS
+    - [ ] LanceDB
+    - [ ] Qdrant
+    - [ ] Supabase
+    - [ ] MongoDB Atlas
 - [ ] Implementing Vector Search
-  - [ ] Indexing Embeddings
-  - [ ] Performing Similarity Search
+    - [ ] Indexing Embeddings
+    - [ ] Performing Similarity Search
 
 ---
 
@@ -160,17 +193,17 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] RAG Use Cases
 - [ ] RAG vs Fine-tuning
 - [ ] Implementing RAG
-  - [ ] Chunking
-  - [ ] Embedding
-  - [ ] Vector Database
-  - [ ] Retrieval Process
-  - [ ] Generation
+    - [ ] Chunking
+    - [ ] Embedding
+    - [ ] Vector Database
+    - [ ] Retrieval Process
+    - [ ] Generation
 - [ ] Ways of Implementing RAG
-  - [ ] Using SDKs Directly
-  - [ ] LangChain
-  - [ ] LlamaIndex
-  - [ ] Haystack
-  - [ ] RAGFlow
+    - [ ] Using SDKs Directly
+    - [ ] LangChain
+    - [ ] LlamaIndex
+    - [ ] Haystack
+    - [ ] RAGFlow
 
 ---
 
@@ -182,6 +215,7 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Multi-agents
 
 ### Building AI Agents
+
 - [ ] Manual Implementation
 - [ ] OpenAI AgentKit & Agent SDK
 - [ ] Claude Agent SDK
@@ -189,17 +223,18 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Google ADK
 
 ### Model Context Protocol (MCP)
+
 - [ ] Core Components
-  - [ ] MCP Host
-  - [ ] MCP Client
-  - [ ] MCP Server
-  - [ ] Data Layer
-  - [ ] Transport Layer
+    - [ ] MCP Host
+    - [ ] MCP Client
+    - [ ] MCP Server
+    - [ ] Data Layer
+    - [ ] Transport Layer
 - [ ] Developing with MCP
-  - [ ] Building an MCP Server
-  - [ ] Building an MCP Client
-  - [ ] Connect to Local Server
-  - [ ] Connect to Remote Server
+    - [ ] Building an MCP Server
+    - [ ] Building an MCP Client
+    - [ ] Connect to Local Server
+    - [ ] Connect to Remote Server
 
 ---
 
@@ -211,6 +246,7 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] Understanding AI Safety Issues
 
 ### Safety Best Practices
+
 - [ ] Content Moderation APIs
 - [ ] Adding End-User IDs in Prompts
 - [ ] Conducting Adversarial Testing
@@ -223,28 +259,31 @@ Track your progress by checking off each topic as you learn it. ✅
 ## 📌 9. Evaluation & Observability
 
 ### LLM Observability
+
 - [ ] Tracing & Logging
 - [ ] Cost/Latency Monitoring
 - [ ] Production Monitoring
 - [ ] Observability Tools
-  - [ ] LangSmith
-  - [ ] Langfuse
-  - [ ] Helicone
-  - [ ] Arize AI
+    - [ ] LangSmith
+    - [ ] Langfuse
+    - [ ] Helicone
+    - [ ] Arize AI
 
 ### LLM Evaluations
+
 - [ ] Evaluation Types
-  - [ ] Deterministic Evals
-  - [ ] Model-Based Evals
-  - [ ] Human Evals
-  - [ ] Evaluation Metrics
+    - [ ] Deterministic Evals
+    - [ ] Model-Based Evals
+    - [ ] Human Evals
+    - [ ] Evaluation Metrics
 - [ ] Evaluation Tools
-  - [ ] DeepEval
-  - [ ] RAGAS
+    - [ ] DeepEval
+    - [ ] RAGAS
 
 - [ ] Regression Testing
 
 ### AI Assisted Coding Tools
+
 - [ ] Claude Code
 - [ ] Gemini
 - [ ] Codex
@@ -257,14 +296,15 @@ Track your progress by checking off each topic as you learn it. ✅
 ## 📌 10. Other AI Applications — Multimodal AI
 
 - [ ] Multimodal AI Usecases
-  - [ ] Image Understanding
-  - [ ] Image Generation
-  - [ ] Video Understanding
-  - [ ] Audio Processing
-  - [ ] Text-to-Speech
-  - [ ] Speech-to-Text
+    - [ ] Image Understanding
+    - [ ] Image Generation
+    - [ ] Video Understanding
+    - [ ] Audio Processing
+    - [ ] Text-to-Speech
+    - [ ] Speech-to-Text
 
 ### Multimodal AI Tasks / Implementing Multimodal AI
+
 - [ ] OpenAI Vision API
 - [ ] DALL-E API
 - [ ] NanoBanana API
@@ -274,17 +314,8 @@ Track your progress by checking off each topic as you learn it. ✅
 - [ ] LlamaIndex for Multimodal Apps
 
 ### Development Tools
+
 - [ ] (see AI Assisted Coding Tools above)
-
----
-
-## 🚀 Continue Learning (Relevant Tracks)
-
-- [ ] Forward Deployed Engineer
-- [ ] Prompt Engineering Roadmap
-- [ ] AI & Data Scientist Roadmap
-- [ ] Vibe Coding Roadmap
-- [ ] AI Agents Roadmap
 
 ---
 
